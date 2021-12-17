@@ -7,11 +7,13 @@ var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var passport = require('passport');
 
 // This will load our env variables
 require('dotenv').config();
 // This will connect us to the database
 require('./config/database');
+// require('./config/passport');
 
 var app = express();
 
@@ -29,7 +31,8 @@ app.use(session({
   resave: false,
   saveUninitialized: true
   }));
-
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
