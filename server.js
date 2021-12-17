@@ -13,7 +13,7 @@ var passport = require('passport');
 require('dotenv').config();
 // This will connect us to the database
 require('./config/database');
-// require('./config/passport');
+require('./config/passport');
 
 var app = express();
 
