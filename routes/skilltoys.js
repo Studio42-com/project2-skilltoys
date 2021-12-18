@@ -1,5 +1,5 @@
-// const express = require('express');
-// const router = express.Router();
+const express = require('express');
+const router = express.Router();
 const skilltoysCtrl = require('../controllers/skilltoys');
 //const isLoggedIn = require('../config/auth');
 

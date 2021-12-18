@@ -1,7 +1,9 @@
-const Skilltoy = require("../models/skilltoy");
+//const Skilltoy = require("../models/skilltoy");
 
-module.export = {
-    
+module.exports = {
+  index  
 };
 
-
+function index(req, res) {
+    res.render("skilltoys/index",{ title: "Skill Toys Index"})
+};

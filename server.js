@@ -1,13 +1,15 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var session = require('express-session');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const session = require('express-session');
+const passport = require('passport');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var passport = require('passport');
+const indexRouter = require('./routes/index');
+const skilltoysRouter = require('./routes/skilltoys');
+
+
 
 // This will load our env variables
 require('dotenv').config();
@@ -37,7 +39,8 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/skilltoys', skilltoysRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
