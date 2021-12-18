@@ -18,6 +18,6 @@ router.post("/", skilltoysCtrl.create);
 router.get('/', skilltoysCtrl.index);
 
 // GET "/skilltoys/:id" - Show Route
-// router.get('/:id', skilltoysCtrl.show);
+router.get('/:id', skilltoysCtrl.show);
 
 module.exports = router;

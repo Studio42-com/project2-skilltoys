@@ -4,7 +4,7 @@ const Skilltoy = require("../models/skilltoy");
 
 module.exports = {
   index,
-  // show,
+  show,
   create,
   new: newSkilltoy
 };
@@ -26,7 +26,7 @@ function create(req, res) {
     if (req.body[key] === "") delete req.body[key];
   }
   const skilltoy = new Skilltoy(req.body);
-  movie.save(function (err) {
+  skilltoy.save(function (err) {
     // one way to handle errors
     if (err) {
       console.log(err);
@@ -35,4 +35,12 @@ function create(req, res) {
     console.log(skilltoy);
     res.redirect(`/skilltoys/${skilltoy._id}`);
   });
+}
+
+function show(req, res) {
+  Skilltoy.findById(req.params.id).exec(function (err, skilltoy) {
+    // Performer.find({_id: {$nin: movie.cast}}, function(err, performers) {
+      res.render("skilltoys/show", { title: "YoYo Detail", skilltoy });
+    }); //Ties to line starting "Skiltoy"
+  // }); Ties to commented out linem Performer
 }

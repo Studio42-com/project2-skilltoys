@@ -10,10 +10,10 @@
 <body>
   <nav>
     <img src="/images/camera.svg">
-     <%- title === 'All Skill Toys' ? 'class="active"' : '' %>ALL Skill Toys
+    <a href="/skilltoys"	<%- title === 'All Skill Toys' ? 'class="active"' : '' %>>ALL Skill Toys</a>
     <% if (user) { %>
-      <%- title === 'Add To the Archive' ? 'class="active"' : '' %>
-      ADD to Archive
+      <a href="/skilltoys/new"	<%- title === 'Add To the Archive' ? 'class="active"' : '' %>>
+      ADD to Archive</a>
       
       <a href="/logout">LOG OUT</a>
     <% } else { %>
