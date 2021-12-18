@@ -7,9 +7,12 @@ const skilltoysCtrl = require('../controllers/skilltoys');
 
 // GET "/skilltoys/new" - New Route
 // router.get('/new', isLoggedIn, skilltoysCtrl.new);
+router.get('/new', skilltoysCtrl.new);
+
 
 // POST "/skilltoys" - Create Route
 // router.post("/", isLoggedIn, skilltoysCtrl.create);
+router.post("/", skilltoysCtrl.create);
 
 // GET "/skilltoys" - Index Route
 router.get('/', skilltoysCtrl.index);

@@ -18,15 +18,15 @@ router.get('/auth/google', passport.authenticate(
   router.get('/oauth2callback', passport.authenticate(
     'google',
     {
-      successRedirect: '/movies',
-      failureRedirect: '/movies'
+      successRedirect: '/skilltoys',
+      failureRedirect: '/skilltoys'
     }
   ));
   
   // OAuth logout route
   router.get('/logout', function(req, res) {
     req.logout();
-    res.redirect('/movies');
+    res.redirect('/skilltoys');
   });
-  
+
 module.exports = router;
