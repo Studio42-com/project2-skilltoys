@@ -3,3 +3,6 @@ https://lucid.app/lucidchart/8ea4dfd4-6f75-403a-b274-bb5cb431a06e/edit?invitatio
 
 Trello:
 https://trello.com/b/C3lDdGi1/project-2-management
+
+
+Additional work notes in "files to read" and ProjectDocs directories.
