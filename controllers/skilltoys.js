@@ -1,6 +1,5 @@
 const Skilltoy = require("../models/skilltoy");
 
-// const skilltoy = require("../models/skilltoy");
 
 module.exports = {
   index,
@@ -38,9 +37,10 @@ function create(req, res) {
 }
 
 function show(req, res) {
-  Skilltoy.findById(req.params.id).exec(function (err, skilltoy) {
-    // Performer.find({_id: {$nin: movie.cast}}, function(err, performers) {
-      res.render("skilltoys/show", { title: "YoYo Detail", skilltoy });
+  Skilltoy.findById(req.params.id).exec(function (err, skilltoy) { //remove .populate('companies')
+    // Skilltoy.find({_id: {$nin: skilltoy.company}}, function(err, companies) {
+      res.render("skilltoys/show", { title: "YoYo Detail", skilltoy }); //remove companies
+
     }); //Ties to line starting "Skiltoy"
-  // }); Ties to commented out linem Performer
+  // }); Ties to commented out line skilltoy
 }

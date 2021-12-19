@@ -1,0 +1,40 @@
+Flow:
+
+User will hit the normal landing page at the root level. Not much features on this page. All functionality and additional viewing will be inside a new directory inside root.
+	Users may not add/alter information unless logged in.
+	Would like to have authentication and authorization functions. Users can ADD items but not delete. Users can ADD reviews and can delete. Users can ADD brands. Administrators can add/delete/alter/update anything, but will settle for full user features and the deletion of an item. The drawback is if a model needed to be udated due to bad input, it would need to be re-entered.
+
+	Page 1(index.ejs) will be a new landing page.
+		Phase 1: Initially, the page will show a list of skill toy items to select to see more information on. Since the numbers will be small. This won't be a big problem. Ideally, I want to sort by company, then by name.
+		Phase 2: Skill toys will now be accessible via  pull down menu. I want to have this sorted by company and then by name.
+		Phase 3: User can do a search based on whatever parameter they wish to enter. If the results match, then all results will be displayed in a list. Be aware that putting in something like “YoYoJam”, “YoYoFactory” and other of the larger brands will return far more results. A search for “Shutter” would return Shutter, Shutter Wide Angle, Shutter 66%, and the new Shutter JTS model(if added), for example. The search results should ideally may return in the order found.
+		
+	Page 2: “Show” page. This will hopefully show a picture of the toy at the top. This will not be a complete set of colors/colorways and/or angles. This may be an icebox feature and will be implemented later.
+	List of the toys information: Brand and name.
+	Specs/stats as well as information like colors.
+	
+	Logged in users will have the option of adding reviews and colors
+
+Page 3: “Menu Modifications” page, complete with instructions as to what can be done and the implications of it.
+	List brands in alphabetical order with a warning that all must be unique.
+		Add Brand/company names
+	These user-drive additions will alter menus used elsewhere and will allow for easier data input for the mostpart.
+
+Page 4: “Add New” page.
+	Brand menu, which is driven by the menu/additions noted in Page 3. There will also be instructions of “if the brand is not listed, go to this page and add it”.
+	Input field for model, Will be a string.
+	Input fields for specs: diameter, width, gap, weight in metric values. The community uses metric.
+		Phase 2: Have a converter from “standard” to “metric”. Low priority.
+	Input Field for material, string.
+	Material: String. Too many to deal with.
+	Response: Likely a select menu. Radio button for “Flowable”.(we know what that means)
+	Bearing SIZE: Select menu.
+		Bearing information: Due to ongoing changes, I haven't decided if this will be a fixed menu or input field. There's too many bearings on the market now. Flat, concave, centerTrac, grooved, V, hybrid, ceramic, full ceramic, Pixel, multi-angle, wing-cut(Terrapin-X exclusive). Might just go with flat or profiled.  Perhaps add a field for “bearing notes”. I do want this field to specify: STOCK BEARING.
+	Responsive/unresponsive for yoyos that can be converted from one to the other.
+		Notes:(bearing swap, bearing swap+ response pad, bearing and axle swap)
+	Axle Tech: Will be select menu, string(tapped, side effects, insert, add others)
+	Axle Type: For replacement axles, set screw specs, string
+	Side-Effects: Select menu listing known side effects types. The issue here is I would like this menu to display only if side effects is chosen for axle tech.
+	Style(s) of play. Check boxes.
+		Note, that 2A and 4A are “equipment exclusive” styles and I would want to make sure if a user checks 2A or 4A, then the other 4 styles are excluded. Styles of 1A,3A and 5A can use the same equipment but are not always used together and would exclude both the 2A and 4A options. This is minor. Players typically won't have an issue with this field. Output should post to an array.
+	
