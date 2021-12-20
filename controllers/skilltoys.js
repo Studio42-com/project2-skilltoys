@@ -18,8 +18,8 @@ function newSkilltoy(req, res) {
 }
 
 function create(req, res) {
-  // convert nowShowing's checkbox of nothing or "on" to boolean
-  req.body.nowShowing = !!req.body.nowShowing;
+  // // convert nowShowing's checkbox of nothing or "on" to boolean
+  // req.body.nowShowing = !!req.body.nowShowing;
   // delete any empty properties from req.body
   for (let key in req.body) {
     if (req.body[key] === "") delete req.body[key];
