@@ -138,6 +138,11 @@ hr {
   color: #424748
 }
 
+#hr2 {
+  border: 5px solid black;
+  width: 100%;
+}
+
 #badge-container {
   display: flex;
   flex-wrap: wrap;
@@ -187,4 +192,9 @@ li {
 .review-user img {
   border-radius: 50%;
   height: 40px;
+}
+
+#preview {
+  height: 100px;
+  width: auto;
 }

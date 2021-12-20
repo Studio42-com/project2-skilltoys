@@ -7,7 +7,7 @@ module.exports = {
 
 function deleteReview(req, res, next) {
   // Note the cool "dot" syntax to query on the property of a subdoc
-  Movie.findOne({ "reviews._id": req.params.id }).then(function (skilltoy) {
+  Skilltoy.findOne({ "reviews._id": req.params.id }).then(function (skilltoy) {
     // Find the review subdoc using the id method on Mongoose arrays
     const review = skilltoy.reviews.id(req.params.id);
     // Ensure that the review was created by the logged in user
