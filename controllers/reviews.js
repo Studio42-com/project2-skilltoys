@@ -32,9 +32,9 @@ function create(req, res) {
   // First find the movie we are adding a review to
   Skilltoy.findById(req.params.id, function(err, skilltoy) {
     // add the user properties to the review being created (req.body)
-    // req.body.user = req.user._id; //OAuth element
-    // req.body.userName = req.user.name; //OAuth element
-    // req.body.userAvatar = req.user.avatar; //OAuth element
+    req.body.user = req.user._id; //OAuth element
+    req.body.userName = req.user.name; //OAuth element
+    req.body.userAvatar = req.user.avatar; //OAuth element
     // add the review to the skilltoy.reviews array
     skilltoy.reviews.push(req.body);
     // we need to save the parent document

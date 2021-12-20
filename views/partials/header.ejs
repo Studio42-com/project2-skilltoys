@@ -11,18 +11,25 @@
   <nav>
     <!-- <img src="/images/camera.svg"> -->
     <a href="/skilltoys"	<%- title === 'All Skill Toys' ? 'class="active"' : '' %>>ALL Skill Toys</a>
-  
-    <a href="/skilltoys/companies"	> Add New Company</a>
-  
-  
-  
+    <% if (user) { %>
+    <a href="/skilltoys/companies"	<%- title === 'Add Company' ? 'class="active"' : '' %>> Add New Company</a>
+
     <a href="/skilltoys/new"	<%- title === 'Add To the Archive' ? 'class="active"' : '' %>>
       ADD to Archive</a>
-      <% if (user) { %> 
+
       <a href="/logout">LOG OUT</a>
     <% } else { %>
       <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
     <% } %>
   </nav>
+  
+  <% if (user) { %>
+SHOW USER ID
+    <% } else { %>
+Please login to make changes or updates
+      <% } %>    
+
+
+
   <main>
     <h1><%= title %></h1>

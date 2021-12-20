@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 const reviewSchema = new Schema({
     content: {type: String, required: true},
 
-    // user: {type: Schema.Types.ObjectId, ref: 'User'},
-    // userName: String,
-    // userAvatar: String
+    user: {type: Schema.Types.ObjectId, ref: 'User'},
+    userName: String,
+    userAvatar: String
   }, {
     timestamps: true
   });

@@ -8,7 +8,7 @@ const reviewsCtrl = require('../controllers/reviews');
 router.post('/skilltoys/:id/reviews', reviewsCtrl.create);
 
 // DELETE "/reviews/:id" - Delete Review Route
-//router.delete('/reviews/:id', reviewsCtrl.delete);
+router.delete('/reviews/:id', reviewsCtrl.delete);
 
 
 module.exports = router;

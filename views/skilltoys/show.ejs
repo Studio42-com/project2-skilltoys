@@ -15,12 +15,13 @@ Show Page landing Page show.ejs
   </section>
 
 <h2>Quick Reviews</h2>
-
+<% if (user) { %>
 <form id="add-review-form" method="POST" action="/skilltoys/<%= skilltoy._id %>/reviews">
     <label>Review:</label>
     <textarea name="content"></textarea>
     <input type="submit" value="Add Review">
   </form>
+  <% } %>
 
   <% if (skilltoy.reviews) { %>
   
@@ -45,7 +46,7 @@ Show Page landing Page show.ejs
             <td>
               <% if (user && user._id.equals(r.user)) { %>
                 <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                  <button type="submit">E)X(3</button>
+                  <button type="submit">XX</button>
                 </form>
               <% } %>
             </td>
