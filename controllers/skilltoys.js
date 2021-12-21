@@ -16,6 +16,8 @@ function index(req, res) {
 async function newSkilltoy(req, res) {
   const skilltoy = await Skilltoy.find();
   const companies = await Company.find({});
+  // const bearings = await Bearing.find({});
+
   // console.log("Look here: ", bearings);
   res.render("skilltoys/new", { title: "Add Skilltoy", skilltoy, companies});
 }
