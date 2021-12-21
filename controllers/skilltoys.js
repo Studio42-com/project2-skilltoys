@@ -14,7 +14,7 @@ function index(req, res) {
 });
 }
 function newSkilltoy(req, res) {
-  res.render("skilltoys/new", { title: "Add Skilltoy" });
+  res.render("skilltoys/new", { title: "Add Skilltoy"});
 }
 
 function create(req, res) {

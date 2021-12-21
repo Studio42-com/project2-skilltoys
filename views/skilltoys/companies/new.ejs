@@ -1,5 +1,15 @@
-<%- include('../partials/header') %>
+<%- include('../../partials/header') %>
 
-LANDING PAGE: skilltoys-companies-new
+<div>Before adding, please ensure that the company is not in the following list:</div>
+<section id="badge-container">
+  <% companies.forEach(function(c) { %>
+    <article class="badge"><%= c.company %></article>
+  <% }) %>
+</section>
+<form id="add-brand-form" action="/companies" method="POST">
+  <label>Brand:</label>
+  <input type="text" name="company">
+  <input type="submit" value="Add Company">
+</form>
 
-<%- include('../partials/footer') %>
+<%- include('../../partials/footer') %>

@@ -8,10 +8,11 @@ const passport = require('passport');
 const methodOverride = require('method-override');
 
 const indexRouter = require('./routes/index');
+const companiesRouter = require('./routes/companies');
 const skilltoysRouter = require('./routes/skilltoys');
 const reviewsRouter = require('./routes/reviews');
-const companiesRouter = require('./routes/companies');
 
+// const modsRouter = require('./routes/mods');
 
 // This will load our env variables
 require('dotenv').config();
@@ -45,10 +46,11 @@ app.use(function(req, res, next) {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/', companiesRouter);
 app.use('/skilltoys', skilltoysRouter);
 app.use('/', reviewsRouter);
-app.use('/', companiesRouter);
 
+// app.use('/', modsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

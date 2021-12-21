@@ -3,6 +3,18 @@
 <form id="new-form" action="/skilltoys" method="POST">
   <label>Brand:</label>
   <input type="text" name="brand">
+
+<label>COMPANY-test area</label>
+<select name="company">
+  <% companies.forEach(function(c) { %>
+
+    <option value="<%= c._id %>"><%= c.company %></option>
+  <% }); %>
+</select>
+
+
+
+
   <label>Model:</label>
   <input type="text" name="model">
  
@@ -13,30 +25,30 @@
 These menu items are NOT included in the scheme and model yet
 
 <label>Color/Colorway:</label>
-<input type="text" name="color">
+<input type="text" name="colorway">
 
 <label>Shape:</label><br>
 <label for "modified">Modified</label><input type="radio" name="shape" value="modified">
 <label for "wing">Wing</label><input type="radio" name="shape" value="wing">
 <br>
 <label>Play Style:</label>
-<label><input type="checkbox" name="style[]" value="1A" /> 1A Single YoYo String Tricks</label>
-<label><input type="checkbox" name="style[]" value="2A" /> 2A, 2-handed Looping</label>
-<label><input type="checkbox" name="style[]" value="3A"/> 3A, 2-handed string tricks</label>
-<label><input type="checkbox" name="style[]" value="4A" /> 4A Offstring</label>
-<label><input type="checkbox" name="style[]" value="5A" /> 5A Counterweight or Freehand</label>
+<label><input type="checkbox" name="style" value="1A" /> 1A Single YoYo String Tricks</label>
+<label><input type="checkbox" name="style" value="2A" /> 2A, 2-handed Looping</label>
+<label><input type="checkbox" name="style" value="3A"/> 3A, 2-handed string tricks</label>
+<label><input type="checkbox" name="style" value="4A" /> 4A Offstring</label>
+<label><input type="checkbox" name="style" value="5A" /> 5A Counterweight or Freehand</label>
 <br>
 
 <label>Specs: Diameter(mm):</label>
-<input type="number" name="diameter">
+<input type="number" name="diameter" step="any">
 <label>Specs: Width(mm):</label>
-<input type="number" name="width">
+<input type="number" name="width" step="any">
 <label>Specs: Gap(mm):</label>
-<input type="number" name="gap">
+<input type="number" name="gap" step="any">
 <label>Specs: Weight(g):</label>
-<input type="number" name="weight">
+<input type="number" name="weight" step="any">
 
-<label>Axle:</label>
+<label>axle:</label>
 <select name="Axle">
   <option value="Ball Bearing">Ball bearing</option>
   <option value="Transaxle">Transaxle</option>
@@ -45,7 +57,7 @@ These menu items are NOT included in the scheme and model yet
 </select>
 
 <label>Axle Tech:</label>
-<select name="Axle-Tech">
+<select name="axleTech">
   <option value="tapped">Tapped</option>
   <option value="Side Effects">Side Effects</option>
   <option value="Pressed Nut">Pressed Nut</option>
@@ -54,10 +66,10 @@ These menu items are NOT included in the scheme and model yet
 </select>
 
 <label>Axle Specs:</label>
-<input type="text" name="AxleSpecs">
+<input type="text" name="axleSpecs">
 
 <label>Bearing Size:</label>
-<select name="BearingSize">
+<select name="bearingSize">
   <option value="A">A, 5x10x4</option>
   <option value="B">B</option>
   <option value="N">N, Half-Width C</option>
@@ -68,7 +80,7 @@ These menu items are NOT included in the scheme and model yet
   </select>
 
 <label>Response:</label>
-<select name="Response">
+<select name="response">
   <option value="Starburst">Starburst</option>
   <option value="19mm OD Slim pad" selected>19mm OD Slim pad(YYF size)</option>
   <option value="One Drop Flow Groove">One Drop Flow Groove</option>
@@ -91,7 +103,7 @@ These menu items are NOT included in the scheme and model yet
 
 
 <label>Surface Treatment:</label>
-<select name="Surface Treatment">
+<select name="surfaceTreatment">
   <option value="raw">Raw</option>
   <option value="Bead Blast">Bead Blast</option>
   <option value="Soda Blast">Soda Blast/option>
