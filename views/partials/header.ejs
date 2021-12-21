@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <script defer src="javascripts/scripts.js"></script>
   <title><%= title %></title>
 </head>
 <body>
   <nav>
-    <!-- <img src="/images/camera.svg"> -->
+    <span id="cornerImage"></span>
     <a href="/skilltoys"	<%- title === 'All Skill Toys' ? 'class="active"' : '' %>>ALL Skill Toys</a>
     <% if (user) { %>
     <a href="/companies/new"	<%- title === 'Add Company' ? 'class="active"' : '' %>> Add New Company</a>

@@ -15,7 +15,7 @@ const reviewSchema = new Schema({
 
     brand: {
       type: String,
-      required: true,
+      // required: true,
     },
     model: {
       type: String,
@@ -32,10 +32,10 @@ const reviewSchema = new Schema({
       type: String,
       required: true,
     },
-    style: {
+    style: [{
       type: String,
       //required: true,
-    },
+    }],
     diameter: {
       type: Number,
       //required: true,

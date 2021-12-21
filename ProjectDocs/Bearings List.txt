@@ -1,20 +1,22 @@
 Bearings List:
 Flat Bearing
+CBC Center Trac (flared edges, flat center)
+Dif-E-Yo KonKave Bearing(Curved)
+One Drop 10-Ball(Flat)
+YoYoRecreation DS(Double Straight)
+CLYW & iYoYo Pixel(8-step)
 B.O.S.S. Wrath(flat)
 B.O.S.S. Rage(Concave with Groove)
 Crucial Grooved Bearing(Concave with Groove)
-Trifecta (10 Ball, curved and grooved)
-Dif-E-Yo KonKave Bearing(Curved)
-One Drop 10-Ball(Flat)
-CBC Center Trac (flared edges, flat center)
-YoYoRecreation DS(Double Straight)
-CLYW & iYoYo Pixel(8-step)
+Trifecta (10 Ball, ABEC-7,curved and grooved)
 Buddha Bearing Simple(Flat)
 Buddha Bearing Ripple(CenterTrac)
 Buddha Bearing Whiple(V, JD Signature)
-Budha Bearing Double Double(2 angle)
+Buddha Bearing Double Double(2 angle)
 Ceramic(Ceramic ball bearings)
 Full Ceramic(ceramic races and ball bearings)
+
+Save TerrapinX Wing Cut for demonstration
 
 
 

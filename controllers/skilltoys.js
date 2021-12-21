@@ -1,5 +1,7 @@
 const Skilltoy = require("../models/skilltoy");
 const Company = require("../models/company");
+const Bearing = require("../models/bearing");
+
 
 module.exports = {
   index,
@@ -16,10 +18,10 @@ function index(req, res) {
 async function newSkilltoy(req, res) {
   const skilltoy = await Skilltoy.find();
   const companies = await Company.find({});
-  // const bearings = await Bearing.find({});
+  const bearings = await Bearing.find({});
 
   // console.log("Look here: ", bearings);
-  res.render("skilltoys/new", { title: "Add Skilltoy", skilltoy, companies});
+  res.render("skilltoys/new", { title: "Add Skilltoy", skilltoy, companies, bearings});
 }
 function create(req, res) {
   // // convert nowShowing's checkbox of nothing or "on" to boolean
@@ -44,11 +46,12 @@ function show(req, res) {
   // Skilltoy.findById(req.params.id).populate('company').exec(function (err, skilltoy) { 
     Skilltoy.findById(req.params.id).exec(function (err, skilltoy) { 
         Company.findById(skilltoy.company).exec(function(err, company){
-          res.render("skilltoys/show", { title: "YoYo Detail", skilltoy, company }); 
+          Bearing.findById(skilltoy.bearing).exec(function(err, bearing){
+          res.render("skilltoys/show", { title: "YoYo Detail", skilltoy, company, bearing }); 
         })
         // Skilltoy.findById(req.params.id).populate('bearing').exec(function (err, skilltoy) {
         //      res.render("skilltoys/show", { title: "YoYo Detail", skilltoy }); //remove companies
-
+      });
     }); //Ties to line starting "Skiltoy"
   // }); Ties to commented out line skilltoy
 }
