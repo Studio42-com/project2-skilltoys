@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 
 const indexRouter = require('./routes/index');
 const companiesRouter = require('./routes/companies');
+const bearingsRouter = require('./routes/bearings');
 const skilltoysRouter = require('./routes/skilltoys');
 const reviewsRouter = require('./routes/reviews');
 
@@ -47,6 +48,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/', companiesRouter);
+app.use('/', bearingsRouter);
 app.use('/skilltoys', skilltoysRouter);
 app.use('/', reviewsRouter);
 

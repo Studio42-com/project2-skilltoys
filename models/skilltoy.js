@@ -12,6 +12,7 @@ const reviewSchema = new Schema({
   });
   
     const skilltoySchema = new Schema({ 
+
     brand: {
       type: String,
       required: true,
@@ -68,6 +69,10 @@ const reviewSchema = new Schema({
       type: String,
       //required: true,
     },
+    bearingType: {
+      type: String,
+      //required: true,
+    },
     response: {
       type: String,
       //required: true,
@@ -83,7 +88,7 @@ const reviewSchema = new Schema({
   
     company: [{type: Schema.Types.ObjectId, ref: 'Company'}],
 
-
+    bearing: [{type: Schema.Types.ObjectId, ref: 'Bearing'}],
 
     reviews: [reviewSchema],
  

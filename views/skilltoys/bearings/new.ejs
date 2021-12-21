@@ -1,0 +1,15 @@
+<%- include('../../partials/header') %>
+
+<div>Before adding, please ensure that the company is not in the following list:</div>
+<section id="badge-container">
+  <% bearings.forEach(function(b) { %>
+    <article class="badge"><%= b.bearing %></article>
+  <% }) %>
+</section>
+<form id="add-bearing-form" action="/bearings" method="POST">
+  <label>Bearings</label>
+  <input type="text" name="bearing">
+  <input type="submit" value="Add Bearing">
+</form>
+
+<%- include('../../partials/footer') %>

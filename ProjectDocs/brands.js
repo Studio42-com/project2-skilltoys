@@ -2,6 +2,11 @@ const companies = ["Duncan", "YoYoJam", "YoYoFactory", "Yomega", "Jun Xu Toys", 
 
 
 
-companies.sort();
-console.log(companies);
+// companies.sort();
+// console.log(companies);
 
+//let sorted = companies;
+
+let sorted = companies.sort();
+
+console.log(sorted);
