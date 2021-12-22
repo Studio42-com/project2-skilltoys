@@ -3,12 +3,13 @@
 <form id="new-form" action="/skilltoys" method="POST">
 <label>Company</label>
   <select name="company">
-    <% companies.forEach(function(c) { %>
-      <option value="<%= c._id %>"><%= c.company %></option>
+    <% companies.forEach(function(p) { %>
+      <option value="<%= p._id %>"><%= p.company %></option>
     <% }); %>
   </select>
 
-
+  <label>Brand:</label>
+  <input type="text" name="brand">
 
   <label>Model:</label>
   <input type="text" name="model">
@@ -16,6 +17,8 @@
   <label>Picture: Upload an image link. Works with Facebook, Imgur and others.</label>
   <input type="text" name="image">
 
+<hr id="hr2">
+These menu items are NOT included in the scheme and model yet
 
 <label>Color/Colorway:</label>
 <input type="text" name="colorway">
@@ -70,13 +73,6 @@
   <option value="Euro-C">Euro-C, 6x13x5</option>
   <option value="D">D, 5x11X5</option>
   <option value="SpecX Small">K(8x8x3), Spec X Small</option>
-  </select>
-
-  <label>Bearing Type:</label>
-  <select name="bearing">
-    <% bearings.forEach(function(b) { %>
-      <option value="<%= b._id %>"><%= b.bearing %></option>
-    <% }); %>
   </select>
 
 <label>Response:</label>

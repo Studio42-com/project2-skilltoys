@@ -12,7 +12,6 @@ const companiesRouter = require('./routes/companies');
 const bearingsRouter = require('./routes/bearings');
 const skilltoysRouter = require('./routes/skilltoys');
 const reviewsRouter = require('./routes/reviews');
-// const editsRouter = require('routes/edits');
 
 // const modsRouter = require('./routes/mods');
 
@@ -47,20 +46,11 @@ app.use(function(req, res, next) {
 });
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Middleware for update
-
-
-
-//End middleware for Update
-
-
-
 app.use('/', indexRouter);
 app.use('/', companiesRouter);
 app.use('/', bearingsRouter);
 app.use('/skilltoys', skilltoysRouter);
 app.use('/', reviewsRouter);
-// app.use('/', editsRouter);
 
 // app.use('/', modsRouter);
 
