@@ -12,6 +12,6 @@ router.get('/companies/new', companiesCtrl.new);
 router.post('/companies', companiesCtrl.create);
 
 // POST "/skilltoys/:skilltoyId/companies" - Add to skill toy
-//router.post('/skilltoys/:skilltoyId/companies', companiesCtrl.addToToy); //this line works.
+// router.post('/skilltoys/:skilltoyId/companies', companiesCtrl.addToToy); //this line works.
 
 module.exports = router;

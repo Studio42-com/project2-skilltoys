@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+
+SkillToys directory landing Page index.ejs
+
+<table id="list">
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Model</th>
+      <th>Get specs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% skilltoys.forEach(function(s) { %>
+      <tr>
+        <td><%= s.company %></td>
+        <td><%= s.model %></td>
+        <td><a href="/skilltoys/<%= s._id %>">Check it out, Yo!</a></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  
+<%- include('../partials/footer') %>
+
+
