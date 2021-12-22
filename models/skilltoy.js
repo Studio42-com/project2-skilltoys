@@ -13,13 +13,9 @@ const reviewSchema = new Schema({
   
     const skilltoySchema = new Schema({ 
 
-    brand: {
-      type: String,
-      // required: true,
-    },
     model: {
       type: String,
-      required: true,
+      //required: true,
     },
     image: {
       type: String,
@@ -69,9 +65,9 @@ const reviewSchema = new Schema({
       type: String,
       //required: true,
     },
-    bearingType: {
+    bearing: {
       type: String,
-      //required: true,
+      required: true,
     },
     response: {
       type: String,
@@ -86,7 +82,7 @@ const reviewSchema = new Schema({
       //required: true,
     },
   
-    company: [{type: Schema.Types.ObjectId, ref: 'Company'}],
+    company: [{type: Schema.Types.ObjectId, ref: 'Company', required: true}],
 
     bearing: [{type: Schema.Types.ObjectId, ref: 'Bearing'}],
 

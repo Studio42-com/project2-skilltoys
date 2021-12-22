@@ -12,6 +12,7 @@
 <body>
   <nav>
     <span id="cornerImage"></span>
+
     <a href="/skilltoys"	<%- title === 'All Skill Toys' ? 'class="active"' : '' %>>ALL Skill Toys</a>
     <% if (user) { %>
     <a href="/companies/new"	<%- title === 'Add Company' ? 'class="active"' : '' %>> Add New Company</a>
@@ -23,6 +24,7 @@
     <% } else { %>
       <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
     <% } %>
+
   </nav>
   
   <% if (user) { %>

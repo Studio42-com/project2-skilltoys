@@ -72,8 +72,8 @@
   <option value="SpecX Small">K(8x8x3), Spec X Small</option>
   </select>
 
-  <label>Bearing Type </label>
-  <select name="bearingType">
+  <label>Bearing Type:</label>
+  <select name="bearing">
     <% bearings.forEach(function(b) { %>
       <option value="<%= b._id %>"><%= b.bearing %></option>
     <% }); %>

@@ -6,7 +6,7 @@ SkillToys directory landing Page index.ejs
 <table id="list">
   <thead>
     <tr>
-      <th>Brand</th>
+      <th>Company</th>
       <th>Model</th>
       <th>Get specs</th>
     </tr>
@@ -14,7 +14,7 @@ SkillToys directory landing Page index.ejs
   <tbody>
     <% skilltoys.forEach(function(s) { %>
       <tr>
-        <td><%= s.brand %></td>
+        <td><%= s.company %></td>
         <td><%= s.model %></td>
         <td><a href="/skilltoys/<%= s._id %>">Check it out, Yo!</a></td>
       </tr>
