@@ -10,6 +10,7 @@ module.exports = {
 
 function index(req, res) {
     Skilltoy.find({}, function (err, skilltoys) {
+      console.log(skilltoys);
     res.render("skilltoys/index", { title: "Skill Toys Index", skilltoys});
 });
 }

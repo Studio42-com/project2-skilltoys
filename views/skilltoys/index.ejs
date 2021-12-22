@@ -14,7 +14,8 @@ SkillToys directory landing Page index.ejs
   <tbody>
     <% skilltoys.forEach(function(s) { %>
       <tr>
-        <td><%= s.company %></td>
+
+        <td><%= s.company[0].company %></td>
         <td><%= s.model %></td>
         <td><a href="/skilltoys/<%= s._id %>">Check it out, Yo!</a></td>
       </tr>
