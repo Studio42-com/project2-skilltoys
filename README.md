@@ -1,4 +1,4 @@
-Project2: Skilltoys Database
+# Project2: Skilltoys Database
 Heroku Production Link: https://skilltoys.herokuapp.com/
 ERD:  https://lucid.app/lucidchart/8ea4dfd4-6f75-403a-b274-bb5cb431a06e/edit?invitationId=inv_da2006da-e84b-4278-a1c2-dfca6e86f0c2
 
@@ -7,8 +7,14 @@ Trello:  https://trello.com/b/C3lDdGi1/project-2-management
 GitHub Repository:
 https://github.com/Studio42-com/project2-skilltoys
 
+Special credit for the dynamic sort function:
+How to sort alphabetically an array of objects by key in JavaScript:
+https://ourcodeworld.com/articles/read/764/how-to-sort-alphabetically-an-array-of-objects-by-key-in-javascript
+
+
 Additional work notes in "files to read" and ProjectDocs directories.
-Informational Section: 
+
+## Informational Section: 
 The yoyo is one of the oldest toys known to man. Only the doll is considered older. Proof of the existence of yoyos has been documented as paintings on Ancient Greek pottery that has been dated to earlier than 2500 BC. This toy has been played with by childen and adults of all ages and status, including kings and emperors. Even Napolean was painted playing with a “bandalore”, which is a yoyo that has the string tied to it.
 In American between 1928 and 1932. Pedro Flores began making and selling yoyos based on a variation of a design from the Philipines. Rather than the string being tied to the axle, the string used a new design of being wrapped upon itself, thus facilitating the string being able to be looped around the axle and allowing the yoyo to “sleep”, or spin at the end of the string. Between 1930 and 1932, Pedro Flores sold his interest to Donald Duncan. This was the beginning of Duncan YoYos, a brand now owned by Flambeau, Inc an is still in business today, making a very wide variety of yoyos.
 While Pedro Flores is credited with bringing the Yo-Yo to America, Duncan is credited with making yoyos popular world-wide. Duncan's innovations involved the creation of the butterfly shape by accidentally assembling a yoyo with the halves inside out. He also pioneered the use of a metal rod for the axle to reduce costs, as well as molded-plastic construction of the halves.
@@ -26,35 +32,35 @@ We have mentioned the term “unresponsive” play, which means there must be so
 In contrast, 2A yoyos are responsive, which is necessary for looping. 4A yoyos tend to have a relatively narrow gap and if were strung up like the other yoyos, would be responsive. If it wasn't, it would be difficult to recall the yoyo. 
 Currently, yoyos are made from a wide variety of plastics, metals and more materials. There has also been a resurgence in fixed axle yoyos made of wood.
 
-Purpose:
+## Purpose:
 With so many yoyos on the market and seemingly no end in sight for new models, there needs to be a way to keep track of things on basic level. We need a historical record noting the existence of certain yoyos, especially the old ones and those that are out of production. We also need a record of yoyos for ongoing maintenance should someone obtain a yoyo and need to keep it operating. The current problem with all existing databases is the controlling nature of those maintaining the databases, as well as not fixing malfunctioning databases. My project has already created a lot of “drama” and “uproar” in the yoyo community, which became so bad even the National YoYo Museum got someone to go fix their broken database.
 This project is to be a simple implementation that will unfortunately lack some of the more advanced features I would like to implement later over time. The design is also intended to be adaptable. By adding, subtracting or changing fields, the database can either support a wider range of skill toys, or be used to create a new database for different skill toys. For example, the requirements for spin tops are drastically different than yoyos, so it may be better for spin tops to be completely separate.
-Objective:
+## Objective:
 Basic "proof of concept" for an international database of yoyos. The main purpose is for historical and maintenance purposes. With an unknown number of active, or at least living players, and unknown how large any collections are, a open community-accessible database would theoretically allow for users to individually add as many yoyos as they feel like making an effort. With thousands of yoyos available, it's too much work for an individual or group to handle. In addition, it would be impossible for anyone to have a complete listing. While this database could never be complete, minimal efforts would keep the database reasonable current. The larger skill toy retailers typically do not receive more than a dozen new models at a time, so some of the input could be offloaded to their people who update their inventory for their web storefront. During the course of this project, I think at least 6 or more new models have hit the market. New items come in bumps here and there or trickle in.
 1: The historical portion is simply the inclusion of the yoyo into the database. Many yoyos do not have long production lives. Some yoyos were not made in big quantities. Some yoyos are made by small companies and their products would be lost to time if not included. There is no "weighting" in this database as far as importance. I currently have quite a few small run and/or small company yoyos. Due to lack of widespread distribution, these types of items are easily lost.
 
 2: The maintenance element is to provide a consolidated single reference point that will quickly and provide users with information regarding specific yoyos. Key information will include bearing size, bearing type, axle type and response pad, to name a few things. A good practical example would be "I lost the set screw that came with the yoyo and I need to get a replacement axle". Similarly would be "I need a new bearing and I don't know what size I need". Another common question would be "What response pad sizes do I need?" as well as "Can I silicone this yoyo". It is also not uncommon to buy a yoyo used and it being in a “some assembly required” condition. To relay 2 short personal experiences, I received a yoyo that was missing the axle and another yoyo that was missing a response pad. For the yoyo missing the axle, I actually called the company owner and got an answer. He also offered to send one but I said that was OK and I was happy to take care of this myself. The yoyo with the missing response pad was a simple solution as I pulled the other response pad and siliconed the yoyo.
 
-Goals: 
+### Goals: 
     Make a bare-bones database and interface.
-        Status:Accomplished. It even includes a photo link.
+        **Status**:Accomplished. It even includes a photo link.
         A yoyo will be added with a photo during presentation.
     Authentication: Basic authentication using Google's OAuth.
-        Status: Basic authentication achieved.
+         **Status**: Basic authentication achieved and will be shown during presentation
     Add Reviews
-        Status: Reviews can be added and removed.
+         **Status**: Reviews can be added and removed.
         A review will be added and removed during presentation.
     Allow for users/companies add in new companies that will populate a select menu.
-        Status: Working
+         **Status**: Working
             Sub-Goal: Working through display issues.
         I will add a small brand during presentation.
     Due to new bearings being introduced, the ability of users to add to this and populate a select menu.
-        Status: For "control" purposes, no direct link is offered but functionality can be proven.
-        I will add a bearing type during presentation to provde functionality.
+        **Status**: For "control" purposes, no direct link is offered but functionality can be proven.
+        I will add a bearing type during presentation to prove functionality. New bearings aren't added that often.
 
 The index page. I initially wanted a different landing page, but for now, it takes us right to a listing of entries:
 
-
+## Image Gallery
 
 <img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/index-nologin.png">
 
@@ -85,7 +91,7 @@ Because there are new bearings being either designed or discovered that are good
 
 
 
-Icebox items:
+### Icebox items:
     Rather than present users with an unsorted list, the goal would be to have a list sorted by company and then by model.
     Further refinement: User can search by various attributes via a page that can help users find yoyos. The initial concept would be "search by company" and/or "search by model name". Other logical searches could be diameter range, width range, weight range and even gap.
         Some users have preferences when it comes to certain specs. "I'm looking for yoyos with a diameter of 56mm and a weight of no more than 66 grams" are rather popular competition requirements.
