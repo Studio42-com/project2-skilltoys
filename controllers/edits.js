@@ -17,13 +17,11 @@ function index(req, res) {
 async function newSkilltoy(req, res) {
   const skilltoy = await Skilltoy.find();
   const companies = await Company.find({});
-  // console.log("Look here: ", bearings);
+
   res.render("skilltoys/new", { title: "Add Skilltoy", skilltoy, companies});
 }
 function create(req, res) {
-  // // convert nowShowing's checkbox of nothing or "on" to boolean
-  // req.body.nowShowing = !!req.body.nowShowing;
-  // delete any empty properties from req.body
+
   for (let key in req.body) {
     if (req.body[key] === "") delete req.body[key];
   }
@@ -40,14 +38,10 @@ function create(req, res) {
 }
 
 function show(req, res) {
-  // Skilltoy.findById(req.params.id).populate('company').exec(function (err, skilltoy) { 
+ 
     Skilltoy.findById(req.params.id).exec(function (err, skilltoy) { 
         Company.findById(skilltoy.company).exec(function(err, company){
           res.render("skilltoys/show", { title: "YoYo Detail", skilltoy, company }); 
         })
-        // Skilltoy.findById(req.params.id).populate('bearing').exec(function (err, skilltoy) {
-        //      res.render("skilltoys/show", { title: "YoYo Detail", skilltoy }); //remove companies
-
-    }); //Ties to line starting "Skiltoy"
-  // }); Ties to commented out line skilltoy
+    }); 
 }

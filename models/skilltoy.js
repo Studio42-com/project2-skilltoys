@@ -19,7 +19,7 @@ const reviewSchema = new Schema({
     },
     image: {
       type: String,
-      //required: true,
+
     },
     colorway: {
     type: String,
@@ -30,40 +30,40 @@ const reviewSchema = new Schema({
     },
     style: [{
       type: String,
-      //required: true,
+
     }],
     diameter: {
       type: Number,
-      //required: true,
+
     },
     width: {
       type: Number,
-      //required: true,
+
     },
     gap: {
       type: Number,
-      //required: true,
+
     },
     weight: {
       type: Number,
-    //required: true,
+
     },
 
     axle: {
       type: String,
-      //required: true,
+
     },
     axleTech: {
       type: String,
-      //required: true,
+
     },
     axleSpecs: {
       type: String,
-    //required: true,
+
     },
     bearingSize: {
       type: String,
-      //required: true,
+  
     },
     bearing: {
       type: String,
@@ -71,14 +71,14 @@ const reviewSchema = new Schema({
     },
     response: {
       type: String,
-      //required: true,
+
     },
     flowable: { 
       type: String,
     },
     surfaceTreatment: {
       type: String,
-      //required: true,
+
     },
   
     company: [{type: Schema.Types.ObjectId, ref: 'Company', required: true}],

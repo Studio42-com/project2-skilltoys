@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const companySchema = new Schema({
-  // company: {type: String, required: true, unique: true},
   company: {type: String, required: true, unique: true},
 }, {
   timestamps: true
