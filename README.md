@@ -1,7 +1,9 @@
 Project2: Skilltoys Database
 Heroku Production Link: https://skilltoys.herokuapp.com/
 ERD:  https://lucid.app/lucidchart/8ea4dfd4-6f75-403a-b274-bb5cb431a06e/edit?invitationId=inv_da2006da-e84b-4278-a1c2-dfca6e86f0c2
+
 Trello:  https://trello.com/b/C3lDdGi1/project-2-management
+
 GitHub Repository:
 https://github.com/Studio42-com/project2-skilltoys
 
@@ -52,30 +54,31 @@ Goals:
 
 The index page. I initially wanted a different landing page, but for now, it takes us right to a listing of entries:
 
-(image index-nogin)
 
-!(https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/index-nologin.png)
+
+!<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/index-nologin.png">
 
 When one passes Oauth, more functions open up:
-(image-login)
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/image-login.png">
 
 To address that new companies come and go, it is better for users and/or small company owners to have an easy option to add their own company in and then they can add their products into the database:
 
-(image addcompanies.jpg).These company entries are used to populate the Company menu on form for adding new items:
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/addcompanies.jpg">
+.These company entries are used to populate the Company menu on form for adding new items:
 
-(image additem)
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/additem">
 
 Users who are not logged in can see item information. Authentication is only necessary to make additions or reviews:
 
-(image viewitem.png)
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/viewitem.png">
 
 Reviews can be added and removed:
 
-(image reviews.png)
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/reviews.png">
 
 Because there are new bearings being either designed or discovered that are good for yoyos, it is important to have a method of easily adding in new bearings. This is a non-published link for the time being.
 
-(image bearings.png)
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/bearings.png">
 
 
 
