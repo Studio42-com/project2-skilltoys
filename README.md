@@ -56,17 +56,17 @@ The index page. I initially wanted a different landing page, but for now, it tak
 
 
 
-!<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/index-nologin.png">
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/index-nologin.png">
 
 When one passes Oauth, more functions open up:
-<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/image-login.png">
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/index-login.png">
 
 To address that new companies come and go, it is better for users and/or small company owners to have an easy option to add their own company in and then they can add their products into the database:
 
-<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/addcompanies.jpg">
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/addcompanies.png">
 .These company entries are used to populate the Company menu on form for adding new items:
 
-<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/additem">
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/additem.png">
 
 Users who are not logged in can see item information. Authentication is only necessary to make additions or reviews:
 
