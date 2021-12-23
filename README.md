@@ -11,6 +11,13 @@ Special credit for the dynamic sort function:
 How to sort alphabetically an array of objects by key in JavaScript:
 https://ourcodeworld.com/articles/read/764/how-to-sort-alphabetically-an-array-of-objects-by-key-in-javascript
 
+Technologies used:
+Express. 
+Mongoose. 
+method-override. 
+Javascript. 
+HTML. 
+CSS.   
 
 Additional work notes in "files to read" and ProjectDocs directories.
 
