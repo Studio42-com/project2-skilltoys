@@ -15,7 +15,7 @@ const reviewSchema = new Schema({
 
     model: {
       type: String,
-      //required: true,
+      required: true,
     },
     image: {
       type: String,
@@ -74,8 +74,7 @@ const reviewSchema = new Schema({
       //required: true,
     },
     flowable: { 
-      type: Boolean,
-      default: false
+      type: String,
     },
     surfaceTreatment: {
       type: String,

@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 <form id="new-form" action="/skilltoys" method="POST">
-<label>Company</label>
+<label>Company:</label>
   <select name="company">
     <% companies.forEach(function(c) { %>
       <option value="<%= c._id %>"><%= c.company %></option>
@@ -10,44 +10,44 @@
 
 
 
-  <label>Model:</label>
+  <label>Model:<small>(Required Field)</small></label>
   <input type="text" name="model">
  
   <label>Picture: Upload an image link. Works with Facebook, Imgur and others.</label>
   <input type="text" name="image">
 
 
-<label>Color/Colorway:</label>
-<input type="text" name="colorway">
+  <label>Color/Colorway:</label>
+  <input type="text" name="colorway">
 
-<label>Shape:</label><br>
-<label for "modified">Modified</label><input type="radio" name="shape" value="modified">
-<label for "wing">Wing</label><input type="radio" name="shape" value="wing">
+  <label>Shape:<small>(Required Field)</small></small></label><br>
+  <label for "modified">Modified</label><input type="radio" name="shape" value="modified">
+  <label for "wing">Wing</label><input type="radio" name="shape" value="wing">
 <br>
-<label>Play Style:</label>
-<label><input type="checkbox" name="style" value="1A" /> 1A Single YoYo String Tricks</label>
-<label><input type="checkbox" name="style" value="2A" /> 2A, 2-handed Looping</label>
-<label><input type="checkbox" name="style" value="3A"/> 3A, 2-handed string tricks</label>
-<label><input type="checkbox" name="style" value="4A" /> 4A Offstring</label>
-<label><input type="checkbox" name="style" value="5A" /> 5A Counterweight or Freehand</label>
+  <label>Play Style:</label>
+    <label><input type="checkbox" name="style" value="1A" /> 1A Single YoYo String Tricks</label>
+    <label><input type="checkbox" name="style" value="2A" /> 2A, 2-handed Looping</label>
+    <label><input type="checkbox" name="style" value="3A"/> 3A, 2-handed string tricks</label>
+    <label><input type="checkbox" name="style" value="4A" /> 4A Offstring</label>
+    <label><input type="checkbox" name="style" value="5A" /> 5A Counterweight or Freehand</label>
 <br>
 
-<label>Specs: Diameter(mm):</label>
-<input type="number" name="diameter" step="any">
-<label>Specs: Width(mm):</label>
-<input type="number" name="width" step="any">
-<label>Specs: Gap(mm):</label>
-<input type="number" name="gap" step="any">
-<label>Specs: Weight(g):</label>
-<input type="number" name="weight" step="any">
+  <label>Specs: Diameter(mm):</label>
+    <input type="number" name="diameter" step="any">
+  <label>Specs: Width(mm):</label>
+    <input type="number" name="width" step="any">
+  <label>Specs: Gap(mm):</label>
+    <input type="number" name="gap" step="any">
+  <label>Specs: Weight(g):</label>
+    <input type="number" name="weight" step="any">
 
 <label>axle:</label>
-<select name="Axle">
-  <option value="Ball Bearing">Ball bearing</option>
-  <option value="Transaxle">Transaxle</option>
-  <option value="Wood Axle-fixed">Wood Axle, Fixed</option>
-  <option value="Fixed Axle">Fixed Axle, other</option>
-</select>
+  <select name="Axle">
+    <option value="Ball Bearing">Ball bearing</option>
+    <option value="Transaxle">Transaxle</option>
+    <option value="Wood Axle-fixed">Wood Axle, Fixed</option>
+    <option value="Fixed Axle">Fixed Axle, other</option>
+  </select>
 
 <label>Axle Tech:</label>
 <select name="axleTech">
@@ -72,12 +72,12 @@
   <option value="SpecX Small">K(8x8x3), Spec X Small</option>
   </select>
 
-  <label>Bearing Type:</label>
+<label>Bearing Type:</label>
   <select name="bearing">
     <% bearings.forEach(function(b) { %>
-      <option value="<%= b._id %>"><%= b.bearing %></option>
+    <option value="<%= b._id %>"><%= b.bearing %></option>
     <% }); %>
-  </select>
+</select>
 
 <label>Response:</label>
 <select name="response">
@@ -92,16 +92,13 @@
   <option value="General Yo Thin Hat pads">General Yo Thin Hat pads</option>
   <option value="Custom">Custom/RTV pads</option>
   </select>
- 
-  <label>Flowable/RTV Compatible(do not use for 4A, and Starburst)</label>
-<input type="checkbox" name="flowable">
+  <label>Flowable RTV Compatible:</label><br>
+  <label for "Unknown">Unknown</label><input type="radio" name="flowable" value="Unknown">
+  <label for "No">Not Compatible</label><input type="radio" name="flowable" value="Not Compatible">
+  <label for "Yes">Compatible</label><input type="radio" name="flowable" value="Compatible">
   <br>
+   
   <p></p>
-
-
-  
-
-
 <label>Surface Treatment:</label>
 <select name="surfaceTreatment">
   <option value="raw">Raw</option>
@@ -114,7 +111,6 @@
   <option value="CandyBlast">CandyBlast</option>
   <option value="DiamondBlast">DiamondBlast(GSquared Exlusive)</option>
 </select>
-
 
 
 
