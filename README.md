@@ -97,11 +97,16 @@ Because there are new bearings being either designed or discovered that are good
 <img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/bearings.png">
 
 
+Lastly, a User Story:
+"As a site visitor, I want to see pictures of yoyos, because it will aid in identification and serve as a visual record."
+Optionally, a photo can be included during the addition of a new record to the database.
 
+<img src="https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/photos.png">
 
 
 
 ### Icebox items:
+
     Rather than present users with an unsorted list, the goal would be to have a list sorted by company and then by model.
     Further refinement: User can search by various attributes via a page that can help users find yoyos. The initial concept would be "search by company" and/or "search by model name". Other logical searches could be diameter range, width range, weight range and even gap.
         Some users have preferences when it comes to certain specs. "I'm looking for yoyos with a diameter of 56mm and a weight of no more than 66 grams" are rather popular competition requirements.
