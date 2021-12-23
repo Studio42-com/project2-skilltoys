@@ -1,7 +1,7 @@
 Project2: Skilltoys Database
 Heroku Production Link: https://skilltoys.herokuapp.com/
-ERD: https://lucid.app/lucidchart/8ea4dfd4-6f75-403a-b274-bb5cb431a06e/edit?invitationId=inv_da2006da-e84b-4278-a1c2-dfca6e86f0c2
-Trello: https://trello.com/b/C3lDdGi1/project-2-management
+ERD:  https://lucid.app/lucidchart/8ea4dfd4-6f75-403a-b274-bb5cb431a06e/edit?invitationId=inv_da2006da-e84b-4278-a1c2-dfca6e86f0c2
+Trello:  https://trello.com/b/C3lDdGi1/project-2-management
 GitHub Repository:
 https://github.com/Studio42-com/project2-skilltoys
 
@@ -54,14 +54,14 @@ The index page. I initially wanted a different landing page, but for now, it tak
 
 (image index-nogin)
 
+!(https://raw.githubusercontent.com/Studio42-com/project2-skilltoys/main/public/images/index-nologin.png)
+
 When one passes Oauth, more functions open up:
 (image-login)
 
 To address that new companies come and go, it is better for users and/or small company owners to have an easy option to add their own company in and then they can add their products into the database:
 
-(image addcompanies.jpg).
-
-These company entries are used to populate the Company menu on form for adding new items:
+(image addcompanies.jpg).These company entries are used to populate the Company menu on form for adding new items:
 
 (image additem)
 
@@ -98,3 +98,4 @@ Icebox items:
     A field to add colors to the yoyo. This would include things like solids and colorways. This would be done on a per yoyo basis. Yoyos often will have different runs, with a different color/colors and/or colors/colorways per run. For example: One Drop typically does solids with their first run, along with 3-4 colorways. Later runs will include different colorways. CLYW does not always do their Claireview Station and/or 28 Stories with their yoyos these days. YYF may do aqua,red and blue for many yoyos, but there's no guarantee. I have multiples of several yoyos. It's better to add colors than to add another entry because of a color.
 
     Better implementation of security. There needs to be levels of authorization. For a prototype, basic is sufficient. Additions and reviews can only be added by authenticated users. All other users should be free to browse the database to find the information they need.
+
