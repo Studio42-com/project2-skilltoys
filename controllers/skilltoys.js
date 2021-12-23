@@ -14,7 +14,7 @@ async function index(req, res) {
     // Skilltoy.find({}, function (err, skilltoys) {
         const skilltoys = await Skilltoy.find({}).populate('company').exec();
         // let company = skilltoys.company;
-      console.log("This should be company: ",skilltoys.company);
+      //console.log("This should be company: ",skilltoys.company);
     res.render("skilltoys/index", { title: "Skill Toys Index", skilltoys});
   // });
 }
