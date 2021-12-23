@@ -25,18 +25,18 @@ The transition to modern yoyo is the result of San Francisco dentist Tom Kuhn, w
 
 In 2003, a player by the name of Johnny DelValle won the Bay Area Classic(regional), Worlds and US National yoyo contest with a vastly different play style that included not only complicated string configurations, it also put unresponsive yoyo play on the map as the new standard style of play.
 
-Yoyo is currently categorized into 5 major play styles:
-1A: This is what most people think of regarding yoyo. This is define as a single, wing-shape long spinning yoyo.
-2A: This style of play requires 2 “modified shape” yoyos for looping-type tricks, using 1 yoyo per hand.
-3A: This involves the use of 2 wing-shaped long spinning yoyos, 1 per hand, performing tricks where the yoyos interact with their own string and the string of the other yoyo.
-4A: Offstring. This style has evolved to use an “oversized” yoyo that is NOT connected to the string, hence the term off-string. The string is wound up onto the yoyo, the yoyo is thrown and launched ito the air and then tricks are performed with the yoyo and string until recalled by the player and the process repeats. This style is derived from the diabolo, which itself is a modern variation of the chinese yoyo.
-5A: Using a single wing-shape long-spinning yoyo, the string is connected to the yoyo, while the other end is connected to a counterweight, rather than attached to the player. Tricks are done while manipulating the counterweight, string and yoyo.
+Yoyo is currently categorized into 5 major play styles:  
+1A: This is what most people think of regarding yoyo. This is define as a single, wing-shape long spinning yoyo.  
+2A: This style of play requires 2 “modified shape” yoyos for looping-type tricks, using 1 yoyo per hand.  
+3A: This involves the use of 2 wing-shaped long spinning yoyos, 1 per hand, performing tricks where the yoyos interact with their own string and the string of the other yoyo.  
+4A: Offstring. This style has evolved to use an “oversized” yoyo that is NOT connected to the string, hence the term off-string. The string is wound up onto the yoyo, the yoyo is thrown and launched ito the air and then tricks are performed with the yoyo and string until recalled by the player and the process repeats. This style is derived from the diabolo, which itself is a modern variation of the chinese yoyo.  
+5A: Using a single wing-shape long-spinning yoyo, the string is connected to the yoyo, while the other end is connected to a counterweight, rather than attached to the player. Tricks are done while manipulating the counterweight, string and yoyo.  
 1A, 3A and 5A use the same equipment in a general sense. Some designs are stronger for some styles than others based on shape and weight distribution.
 2A and 4A styles use yoyos designed for those styles of play.
 
 We have mentioned the term “unresponsive” play, which means there must be something known as “responsive” play. In simple terms, responsive is short for “tug responsive”. Responsive yoyos come back when you tug on the string, with that small amount of slack creating a method of the yoyo wrapping the string up and returning to the player. Unresponsive yoyos will not return to the player using a tug. Responsive yoyos come back when the player uses what is known as a “bind return” that puts extra string into the gap. This extra string interacts with the response pad and then the yoyo returns. Unrespnsive play is due to the wide gap in the center of the yoyo. Unresponsive ball bearing yoyos are what makes the 1A, 3A and 5A divisions possible.
 
-In contrast, 2A yoyos are responsive, which is necessary for looping. 4A yoyos tend to have a relatively narrow gap and if were strung up like the other yoyos, would be responsive. If it wasn't, it would be difficult to recall the yoyo. 
+In contrast, 2A yoyos are responsive, which is necessary for looping. 4A yoyos tend to have a relatively narrow gap and if were strung up like the other yoyos, would be responsive. If it wasn't, it would be difficult to recall the yoyo.   
 Currently, yoyos are made from a wide variety of plastics, metals and more materials. There has also been a resurgence in fixed axle yoyos made of wood.
 
 ## Purpose:
@@ -52,21 +52,21 @@ Basic "proof of concept" for an international database of yoyos. The main purpos
 2: The maintenance element is to provide a consolidated single reference point that will quickly and provide users with information regarding specific yoyos. Key information will include bearing size, bearing type, axle type and response pad, to name a few things. A good practical example would be "I lost the set screw that came with the yoyo and I need to get a replacement axle". Similarly would be "I need a new bearing and I don't know what size I need". Another common question would be "What response pad sizes do I need?" as well as "Can I silicone this yoyo". It is also not uncommon to buy a yoyo used and it being in a “some assembly required” condition. To relay 2 short personal experiences, I received a yoyo that was missing the axle and another yoyo that was missing a response pad. For the yoyo missing the axle, I actually called the company owner and got an answer. He also offered to send one but I said that was OK and I was happy to take care of this myself. The yoyo with the missing response pad was a simple solution as I pulled the other response pad and siliconed the yoyo.
 
 ### Goals: 
-    Make a bare-bones database and interface.
-        **Status**:Accomplished. It even includes a photo link.
-        A yoyo will be added with a photo during presentation.
-    Authentication: Basic authentication using Google's OAuth.
-         **Status**: Basic authentication achieved and will be shown during presentation
-    Add Reviews
-         **Status**: Reviews can be added and removed.
-        A review will be added and removed during presentation.
-    Allow for users/companies add in new companies that will populate a select menu.
-         **Status**: Working
-            Sub-Goal: Working through display issues.
-        I will add a small brand during presentation.
-    Due to new bearings being introduced, the ability of users to add to this and populate a select menu.
-        **Status**: For "control" purposes, no direct link is offered but functionality can be proven.
-        I will add a bearing type during presentation to prove functionality. New bearings aren't added that often.
+    Make a bare-bones database and interface.  
+        **Status**:Accomplished. It even includes a photo link.  
+        A yoyo will be added with a photo during presentation.  
+    Authentication: Basic authentication using Google's OAuth.  
+         **Status**: Basic authentication achieved and will be shown during presentation. 
+    Add Reviews. 
+         **Status**: Reviews can be added and removed.  
+        A review will be added and removed during presentation.  
+    Allow for users/companies add in new companies that will populate a select menu.  
+         **Status**: Working. 
+            Sub-Goal: Working through display issues.  
+        I will add a small brand during presentation.  
+    Due to new bearings being introduced, the ability of users to add to this and populate a select menu.  
+        **Status**: For "control" purposes, no direct link is offered but functionality can be proven.  
+        I will add a bearing type during presentation to prove functionality. New bearings aren't added that often.  
 
 The index page. I initially wanted a different landing page, but for now, it takes us right to a listing of entries:
 
